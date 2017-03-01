@@ -1,0 +1,95 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+a {
+    margin: 20px;
+}
+
+.button,
+.button:active {
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    color: white;
+    background: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.small {
+    width: 75px;
+    height: 20px;
+    line-height: 20px;
+    border-bottom-width: 2px;
+    font-size: 10px;
+}
+
+.large {
+    width: 115px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom-width: 3px;
+    font-size: 12px;
+}
+
+.yes,
+.yes:active {
+    background: #4eb7a8;
+    border-color: #28a290;
+}
+
+.no,
+no.active {
+    background: #e75735;
+    border-color: #cc4626;
+}
+
+.button:hover {
+    background: white;
+    cursor: pointer;
+
+}
+
+.button+.yes:hover {
+    color: #44ae9f;
+}
+
+.button+.no:hover {
+    color: #e34a26;
+}
+
+.arrow {
+    display: inline-block;
+    border-radius: 50%;
+    width: 45px;
+    height:45px;
+    background-color: #4eb7a8;
+    border: 3px solid #4eb7a8;
+}
+
+.arrow:after {
+    content: "";
+    top: 20px;
+    left: 20px;
+    margin: 12px auto;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 5px solid white;
+    border-radius: 5px;
+    transform: rotate(45deg);
+}
+
+.arrow-right:after {
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.arrow-left:after {
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
