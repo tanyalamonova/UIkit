@@ -6,54 +6,46 @@ body {
 a {
   margin: 0 20px;
 }
-.button,
-.button:active {
+.button {
   display: inline-block;
   border-width: 1px;
   border-style: solid;
   border-radius: 5px;
-  color: #fff;
-  background: #000;
+  color: #000;
+  background: #fff;
   font-weight: bold;
   text-align: center;
 }
-.button +.small,
-.button:active +.small {
+.button +.small {
   width: 75px;
   height: 20px;
   line-height: 20px;
   border-bottom-width: 2px;
   font-size: 10px;
 }
-.button +.large,
-.button:active +.large {
+.button +.large {
   width: 115px;
   height: 30px;
   line-height: 30px;
   border-bottom-width: 3px;
   font-size: 12px;
 }
-.button +.yes,
-.button:active +.yes {
-  background: #4eb7a8;
+.button +.yes {
+  color: #4eb7a8;
   border-color: #28a290;
 }
-.button +.yes:hover,
-.button:active +.yes:hover {
-  color: #44ae9f;
+.button +.yes:hover {
+  background: #4eb7a8;
 }
-.button +.no,
-.button:active +.no {
-  background: #e75735;
+.button +.no {
+  color: #e75735;
   border-color: #cc4626;
 }
-.button +.no:hover,
-.button:active +.no:hover {
-  color: #e34a26;
+.button +.no:hover {
+  background: #e75735;
 }
-.button:hover,
-.button:active:hover {
-  background: #fff;
+.button:hover {
+  color: #fff;
   cursor: pointer;
 }
 .arrow {
@@ -62,7 +54,7 @@ a {
   border-radius: 50%;
   width: 45px;
   height: 45px;
-  background-color: #4eb7a8;
+  background-color: #fff;
   border: 3px solid #4eb7a8;
 }
 .arrow:after {
@@ -76,7 +68,70 @@ a {
   margin: auto;
   width: 10px;
   height: 10px;
-  border: 5px solid #fff;
-  border-radius: 5px;
+  border: 5px solid #4eb7a8;
   transform: rotate(45deg);
+}
+.arrow +.arrow-left:after {
+  margin-left: 15px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+.arrow +.arrow-left:hover:after {
+  border-left-color: #fff;
+  border-bottom-color: #fff;
+}
+.arrow +.arrow-right:after {
+  margin-right: 15px;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+.arrow +.arrow-right:hover:after {
+  border-right-color: #fff;
+  border-top-color: #fff;
+}
+.arrow:hover {
+  background: #4eb7a8;
+}
+.arrow +.unavaliable {
+  background: #e5e5e5;
+  border-color: #e5e5e5;
+}
+.arrow +.unavaliable +.arrow-left:after {
+  border-left-color: #fff;
+  border-bottom-color: #fff;
+}
+.arrow +.unavaliable +.arrow-right:after {
+  border-right-color: #fff;
+  border-top-color: #fff;
+}
+.percentage {
+  display: inline-block;
+  overflow: hidden;
+  border: 3px solid #e75735;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  line-height: 85px;
+  text-align: center;
+  font-size: 40px;
+  color: #9d9d9d;
+  clip: rect(0 20px 0 50px);
+}
+.percentage .clip {
+  border-radius: 50%;
+  clip: rect(0px, 200px, 200px, 100px);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.percentage .clip .circle {
+  border-radius: 50%;
+  clip: rect(0px, 100px, 200px, 0px);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  font-family: monospace;
+  font-size: 1.5rem;
+  transform: rotate(-90deg);
+  background-color: #00f;
 }
