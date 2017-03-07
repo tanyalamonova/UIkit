@@ -122,15 +122,15 @@ a {
   height: 100%;
 }
 .percentage .slice.one {
-  clip: rect(0 85px 42px 0);
+  clip: rect(0 42px 42px 0);
   background: #e75735;
 }
 .percentage .slice.two {
-  clip: rect(0 42px 85px 0);
+  clip: rect(0 42px 42px 0);
   background: #fff;
 }
 .percentage.perc-25 .slice.one {
-  transform: rotate(90deg);
+  transform: rotate(36deg);
 }
 .percentage.perc-25 .slice.two {
   transform: rotate(0deg);
@@ -145,18 +145,107 @@ a {
   transform: rotate(90deg);
 }
 .percentage.perc-87 .slice.two {
-  transform: rotate(300deg);
+  transform: rotate(0deg);
 }
 .percentage .center {
+  position: absolute;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  background: #fff;
+}
+.percentage .center span {
+  display: block;
+  text-align: center;
+}
+.multi-donut {
+  display: inline-block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.pie {
+  display: inline-block;
+  position: absolute;
+  width: 42px;
+  height: 85px;
+  overflow: hidden;
+  left: 63px;
+  transform-origin: left center;
+}
+.pie:before {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 85px;
+  left: -42px;
+  border-radius: 42px 0 0 42px;
+  transform-origin: right center;
+}
+.pie.big {
+  width: 85px;
+  height: 85px;
+  left: 21px;
+  transform-origin: center center;
+}
+.pie.big:before {
+  left: 0px;
+}
+.pie.big:after {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 85px;
+  left: 42px;
+  border-radius: 0 42px 42px 0;
+}
+.pie:nth-of-type(1):before,
+.pie:nth-of-type(1):after {
+  background-color: #747474;
+}
+.pie:nth-of-type(2):before,
+.pie:nth-of-type(2):after {
+  background-color: #e75735;
+}
+.pie:nth-of-type(3):before,
+.pie:nth-of-type(3):after {
+  background-color: #4eb7a8;
+}
+.pie:nth-of-type(4):before,
+.pie:nth-of-type(4):after {
+  background-color: #9d9d9d;
+}
+.pie[data-start="30"] {
+  transform: rotate(30deg);
+}
+.pie[data-start="60"] {
+  transform: rotate(60deg);
+}
+.pie[data-start="100"] {
+  transform: rotate(100deg);
+}
+.pie[data-value="30"]:before {
+  transform: rotate(31deg);
+}
+.pie[data-value="40"]:before {
+  transform: rotate(41deg);
+}
+.pie[data-value="260"]:before {
+  transform: rotate(260deg);
+}
+.pie .center {
   position: absolute;
   border-radius: 50%;
   top: 10px;
   left: 10px;
   width: 65px;
   height: 65px;
+  line-height: 65px;
   background: #fff;
-}
-.percentage .center span {
-  display: block;
-  text-align: center;
+  z-index: 10;
 }
