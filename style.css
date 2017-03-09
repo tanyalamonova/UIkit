@@ -2,6 +2,7 @@ body {
   font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: #747474;
 }
 a {
   margin: 0 20px;
@@ -164,10 +165,9 @@ a {
 .multi-donut {
   display: inline-block;
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 85px;
+  height: 85px;
   background-color: #fff;
-  border: 1px solid #000;
 }
 .pie {
   display: inline-block;
@@ -238,14 +238,59 @@ a {
 .pie[data-value="260"]:before {
   transform: rotate(260deg);
 }
-.pie .center {
+.chart.center {
+  display: block;
   position: absolute;
   border-radius: 50%;
-  top: 10px;
-  left: 10px;
+  border: 1px solid #f00;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   width: 65px;
   height: 65px;
   line-height: 65px;
   background: #fff;
   z-index: 10;
+}
+.chart.center span {
+  display: block;
+  text-align: center;
+}
+.stages {
+  margin-top: 100px;
+}
+.stages .stage {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  z-index: -1;
+  height: 5px;
+  width: 130px;
+  background-color: #e5e5e5;
+  vertical-align: middle;
+}
+.stages .point {
+  margin: 0 -10px;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #888;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #e5e5e5;
+}
+.stages .point:first-of-type {
+  margin-left: 0;
+}
+.stages .done {
+  background-color: #e75735;
+  color: #fff;
 }
