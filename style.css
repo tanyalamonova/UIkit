@@ -1,4 +1,5 @@
 body {
+  margin: 50px;
   font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -16,6 +17,9 @@ a {
   background: #fff;
   font-weight: bold;
   text-align: center;
+}
+.button.button:first-of-type {
+  display: none;
 }
 .button +.small {
   width: 75px;
@@ -105,6 +109,10 @@ a {
   border-right-color: #fff;
   border-top-color: #fff;
 }
+.arrow.arrow:first-of-type,
+.arrow.arrow:nth-of-type(4) {
+  display: none;
+}
 .percentage {
   position: relative;
   display: inline-block;
@@ -164,12 +172,18 @@ a {
 }
 .multi-donut {
   display: inline-block;
-  position: absolute;
+  position: relative;
   width: 85px;
   height: 85px;
   background-color: #fff;
 }
+.multi-donut .chart {
+  width: 100%;
+  height: 100%;
+}
 .pie {
+  margin: 0;
+  padding: 0;
   display: inline-block;
   position: absolute;
   width: 42px;
@@ -188,6 +202,7 @@ a {
   transform-origin: right center;
 }
 .pie.big {
+  border-radius: 50%;
   width: 85px;
   height: 85px;
   left: 21px;
@@ -202,7 +217,7 @@ a {
   width: 42px;
   height: 85px;
   left: 42px;
-  border-radius: 0 42px 42px 0;
+  border-radius: 0 50% 50% 0;
 }
 .pie:nth-of-type(1):before,
 .pie:nth-of-type(1):after {
@@ -226,39 +241,32 @@ a {
 .pie[data-start="60"] {
   transform: rotate(60deg);
 }
-.pie[data-start="100"] {
-  transform: rotate(100deg);
+.pie[data-start="160"] {
+  transform: rotate(160deg);
 }
 .pie[data-value="30"]:before {
   transform: rotate(31deg);
 }
-.pie[data-value="40"]:before {
-  transform: rotate(41deg);
+.pie[data-value="100"]:before {
+  transform: rotate(101deg);
 }
-.pie[data-value="260"]:before {
-  transform: rotate(260deg);
+.pie[data-value="200"]:before {
+  transform: rotate(200deg);
 }
-.chart.center {
+.chart > .center {
   display: block;
   position: absolute;
   border-radius: 50%;
-  border: 1px solid #f00;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 65px;
-  height: 65px;
+  top: 15px;
+  left: 36px;
+  width: 55px;
+  height: 55px;
   line-height: 65px;
   background: #fff;
-  z-index: 10;
 }
-.chart.center span {
+.chart > .center span {
   display: block;
   text-align: center;
-}
-.stages {
-  margin-top: 100px;
 }
 .stages .stage {
   margin: 0;
@@ -293,4 +301,22 @@ a {
 .stages .done {
   background-color: #e75735;
   color: #fff;
+}
+.slider {
+  display: inline-block;
+  vertical-align: middle;
+  height: 5px;
+  width: 260px;
+  background-color: #e5e5e5;
+  border-radius: 2px;
+}
+.slider:before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e75735;
+  top: 0;
+  left: 0;
 }
