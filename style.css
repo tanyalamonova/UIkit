@@ -2,6 +2,7 @@ body {
   margin: 50px;
   font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
+  font-weight: bold;
   letter-spacing: 1px;
   color: #747474;
 }
@@ -303,6 +304,7 @@ a {
   color: #fff;
 }
 .slider {
+  margin-top: 50px;
   display: inline-block;
   vertical-align: middle;
   height: 5px;
@@ -310,13 +312,80 @@ a {
   background-color: #e5e5e5;
   border-radius: 2px;
 }
-.slider:before {
+.slider.one:before {
   display: block;
   content: "";
+  float: left;
+  position: relative;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   background-color: #e75735;
-  top: 0;
+  top: -8px;
+  left: 100px;
+}
+.slider.one:after {
+  display: block;
+  content: "40";
+  float: left;
+  position: relative;
+  width: 35px;
+  height: 28px;
+  background: url("Slider bubble bg.png") no-repeat;
+  top: -40px;
+  left: 75px;
+  text-align: center;
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+}
+.slider.two:before {
+  display: block;
+  content: "";
+  float: left;
   left: 0;
+  top: 0;
+  height: 5px;
+  width: 195px;
+  border-radius: 2px;
+  background-color: #4eb7a8;
+}
+.slider.two:after {
+  display: block;
+  content: "";
+  float: left;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #4eb7a8;
+  top: -8px;
+  left: -10px;
+}
+.slider-scale {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+.slider-scale .span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 0;
+}
+.slider-scale .span:first-of-type {
+  left: -10px;
+}
+.slider-scale .span:nth-of-type(2) {
+  left: 15%;
+}
+.slider-scale .span:nth-of-type(3) {
+  left: 40%;
+}
+.slider-scale .span:nth-of-type(4) {
+  left: 65%;
+}
+.slider-scale .span:nth-of-type(5) {
+  left: 90%;
 }
