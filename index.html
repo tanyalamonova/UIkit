@@ -7,102 +7,123 @@
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     </head>
     <body>
-        <div class="buttons">
-            <h1 class="block-header">buttons</h1>
-            <a class="button button-small button-yes">OK</a>
-            <a class="button button-small button-no">cancel</a>
-            <a class="button button-large button-yes">OK</a>
-            <a class="button button-large button-no">cancel</a>
-        </div>
-        <div class="arrows">
-            <h1 class="block-header">arrows</h1>
-            <a class="arrow arrow-active arrow-left"></a>
-            <a class="arrow arrow-active arrow-right"></a>
-            <a class="arrow arrow-left arrow-unavaliable"></a>
-            <a class="arrow arrow-right arrow-unavaliable"></a>
-        </div>
+        <div class="body-container">
+            <div class="buttons">
+                <h1 class="block-header">buttons</h1>
+                <a class="button button-small button-yes">OK</a>
+                <a class="button button-small button-no">cancel</a>
+                <a class="button button-large button-yes">OK</a>
+                <a class="button button-large button-no">cancel</a>
+            </div>
+            <div class="arrows">
+                <h1 class="block-header">arrows</h1>
+                <a class="arrow arrow-active arrow-left"></a>
+                <a class="arrow arrow-active arrow-right"></a>
+                <a class="arrow arrow-left arrow-unavaliable"></a>
+                <a class="arrow arrow-right arrow-unavaliable"></a>
+            </div>
 
-        <div class="percentages">
-            <h1 class="block-header">percentage / pie charts</h1>
-            <div class="percentage perc-25">
-                <div class="slice slice-one"></div>
-                <div class="slice slice-two"></div>
-                <div class="center">
-                    <span class="percentage-span">10</span>
+            <div class="percentages">
+                <h1 class="block-header">percentage / pie charts</h1>
+                <div class="percentage perc-25">
+                    <div class="slice slice-one"></div>
+                    <div class="slice slice-two"></div>
+                    <div class="center">
+                        <span class="percentage-span">10</span>
+                    </div>
+                </div>
+                <div class="percentage perc-0">
+                    <div class="slice slice-one"></div>
+                    <div class="slice slice-two"></div>
+                    <div class="center">
+                        <span class="percentage-span">0</span>
+                    </div>
+                </div>
+                <div class="percentage perc-87">
+                    <div class="slice slice-one"></div>
+                    <div class="slice slice-two"></div>
+                    <div class="center">
+                        <span class="percentage-span">25</span>
+                    </div>
+                </div>
+                <div class="multi-donut">
+                    <div class="milti-donut-chart">
+                        <div class="pie" data-start="0" data-value="30"></div>
+                        <div class="pie pie-highlight" data-start="30" data-value="30"></div>
+                        <div class="pie" data-start="60" data-value="100"></div>
+                        <div class="pie pie-big" data-start="160" data-value="200"></div>
+                        <div class="multi-donut-center"></div>
+                    </div>
                 </div>
             </div>
-            <div class="percentage perc-0">
-                <div class="slice slice-one"></div>
-                <div class="slice slice-two"></div>
-                <div class="center">
-                    <span class="percentage-span">0</span>
+
+            <div class="stages">
+                <h1 class="block-header">stages</h1>
+                <div class="stage-point stage-done">1</div>
+                <div class="stage stage-done"></div>
+                <div class="stage-point stage-done">2</div>
+                <div class="stage stage-done"></div>
+                <div class="stage-point stage-done">3</div>
+                <div class="stage"></div>
+                <div class="stage-point">4</div>
+                <div class="stage"></div>
+                <div class="stage-point">5</div>
+            </div>
+
+            <div class="sliders">
+                <h1 class="block-header">sliders</h1>
+                <div class="slider slider-one"></div>
+                <div class="slider-container">
+                    <div class="slider slider-two"></div>
+                    <div class="slider-scale">
+                        <span class="slider-scale-span">0</span>
+                        <span class="slider-scale-span">25</span>
+                        <span class="slider-scale-span">50</span>
+                        <span class="slider-scale-span">75</span>
+                        <span class="slider-scale-span">100</span>
+                    </div>
                 </div>
             </div>
-            <div class="percentage perc-87">
-                <div class="slice slice-one"></div>
-                <div class="slice slice-two"></div>
-                <div class="center">
-                    <span class="percentage-span">25</span>
+
+            <div class="form-elements">
+                <h1 class="block-header">form elements</h1>
+                <form class="form">
+                    <input class="input" type="text" name="name" id="name" placeholder="Your Name">
+                    <label class="input-message" for="name"></label>
+                    <input class="input" type="email" name="email" id="email" placeholder="Your Email">
+                    <label class="input-message" for="email"></label>
+                    <textarea class="textarea" name="message" placeholder="Your Message"></textarea>
+                    <a class="button button-large button-yes button-submit">submit</a>
+                </form>
+            </div>
+
+            <div class="toggles">
+                <h1 class="block-header">toggles</h1>
+                <input type="checkbox" class="checkbox-toggle" id="toggle" />
+                <label for="toggle"></label>
+            </div>
+
+            <div class="tick-boxes">
+                <h1 class="block-header">tick boxes</h1>
+                <input type="checkbox" class="checkbox-tickbox" id="tickbox"/>
+                <label for="tickbox"></label>
+            </div>
+
+            <div class="profile">
+                <h1 class="block-header">user profile</h1>
+                <div class="user-container">
+                    <img class="user-avatar" src="img/avatar.jpg"/>
+                    <div class="user-info">
+                        <span class="user user-name">sarah brown</span>
+                        <span class="user user-occupation">developer</span>
+                        <div class="user-social">
+                            <a class="social-icon icon-facebook" hef="#"></a>
+                            <a class="social-icon icon-twitter" hef="#"></a>
+                            <a class="social-icon icon-website" hef="#"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="multi-donut">
-                <div class="milti-donut-chart">
-                    <div class="pie" data-start="0" data-value="30"></div>
-                    <div class="pie pie-highlight" data-start="30" data-value="30"></div>
-                    <div class="pie" data-start="60" data-value="100"></div>
-                    <div class="pie pie-big" data-start="160" data-value="200"></div>
-                    <div class="multi-donut-center"></div>
-                </div>
-            </div>
-        </div>
 
-        <div class="stages">
-            <h1 class="block-header">stages</h1>
-            <div class="stage-point stage-done">1</div>
-            <div class="stage stage-done"></div>
-            <div class="stage-point stage-done">2</div>
-            <div class="stage stage-done"></div>
-            <div class="stage-point stage-done">3</div>
-            <div class="stage"></div>
-            <div class="stage-point">4</div>
-            <div class="stage"></div>
-            <div class="stage-point">5</div>
         </div>
-
-        <div class="sliders">
-            <h1 class="block-header">sliders</h1>
-            <div class="slider slider-one"></div>
-            <div class="slider-container">
-                <div class="slider slider-two"></div>
-                <div class="slider-scale">
-                    <span class="slider-scale-span">0</span>
-                    <span class="slider-scale-span">25</span>
-                    <span class="slider-scale-span">50</span>
-                    <span class="slider-scale-span">75</span>
-                    <span class="slider-scale-span">100</span>
-                </div>
-            </div>
-        </div>
-        <div class="form">
-            <h1 class="block-header">form elements</h1>
-            <form>
-                <input class="input" type="text" name="name" placeholder="Your Name">
-                <input class="input" type="text" name="email" placeholder="Your Email">
-                <textarea class="textarea" name="message" placeholder="Your Message"></textarea>
-                <a class="button button-large button-yes button-submit">submit</a>
-            </form>
-        </div>
-
-        <div class="toggles">
-            <h1 class="block-header">toggles</h1>
-            <div class="toggle toggle-off"></div>
-            <div class="toggle toggle-on"></div>
-        </div>
-
-        <div class="tick-boxes">
-            <h1 class="block-header">tick boxes</h1>
-            <div class="tickbox tickbox-active"></div>
-            <div class="tickbox tickbox-unavaliable"></div>
-        </div>
-
     </body>
