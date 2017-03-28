@@ -117,13 +117,78 @@
                         <span class="user user-name">sarah brown</span>
                         <span class="user user-occupation">developer</span>
                         <div class="user-social">
-                            <a class="social-icon icon-facebook" hef="#"></a>
-                            <a class="social-icon icon-twitter" hef="#"></a>
-                            <a class="social-icon icon-website" hef="#"></a>
+                            <a class="social-icon icon-facebook" href="#"></a>
+                            <a class="social-icon icon-twitter" href="#"></a>
+                            <a class="social-icon icon-website" href="#"></a>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <div class="newsevents">
+                <h1 class="block-header">news &amp; events</h1>
+                <div class="newsevent-list">
+                    <div class="newsevents-item">
+                        <div class="newsevents-image-container">
+                            <img class="newsevents-image" src="img/cycling-news.jpg">
+                        </div>
+                        <div class="newsevents-content news-content">
+                                <span class="news-info news-title">It's all going downhill</span>
+                                <span class="news-info news-date">24 august 2013</span>
+                                <span class="news-info news-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id feugiat eros, vel tincidunt nibh. Fusce ornare et augue et molestie.</span>
+                        </div>
+                    </div>
+                    <div class="newsevents-item">
+                        <div class="newsevents-image-container">
+                            <img class="newsevents-image" src="img/event-image.jpg">
+                        </div>
+                        <div class="newsevents-content event-content">
+                            <div class="news-info event-date">
+                                <span class="event-day">24</span>
+                                <span class="event-month">aug</span>
+                            </div>
+                            <span class="news-info event-title">this is the title</span>
+                            <span class="news-info event-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                            <a class="button button-large button-yes button-event">add to calendar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="location">
+                <h1 class="block-header">location</h1>
+                <div class="address-info">
+                    <div class="map" id="map"></div>
+                    <div class="map-address">
+                        <div class="map-info">
+                            <span class="location-info location-message">Meet us!</span>
+                            <span class="location-info location-address">1259 california st</br>san francisco, ca</span>
+                        </div>
+                        <div class="map-icons">
+                            <a class="map-icon my-location-icon" href="#"></a>
+                            <a class="map-icon marker-icon" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
+
+<script>
+    function googleMap() {
+        var mapCenter = new google.maps.LatLng(37.7912987,-122.4151235);
+        var mapOptions = {
+            center: mapCenter, 
+            zoom: 13, 
+            disableDefaultUI: true,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        var marker = new google.maps.Marker({
+            position: mapCenter,
+            map: map,
+            title: ''
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAploWfSPNJ0K1HV9Xp5I653skKRcSO688&callback=googleMap""></script>
