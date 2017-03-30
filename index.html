@@ -88,9 +88,9 @@
             <div class="form-elements">
                 <h1 class="block-header">form elements</h1>
                 <form class="form">
-                    <input class="input" type="text" name="name" id="name" placeholder="Your Name">
+                    <input class="input input-text" type="text" name="name" id="name" placeholder="Your Name">
                     <label class="input-message" for="name"></label>
-                    <input class="input" type="email" name="email" id="email" placeholder="Your Email">
+                    <input class="input input-text" type="email" name="email" id="email" placeholder="Your Email">
                     <label class="input-message" for="email"></label>
                     <textarea class="textarea" name="message" placeholder="Your Message"></textarea>
                     <a class="button button-large button-yes button-submit">submit</a>
@@ -168,6 +168,26 @@
                             <a class="map-icon my-location-icon" href="#"></a>
                             <a class="map-icon marker-icon" href="#"></a>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search">
+                <div class="form">
+                    <h1 class="block-header">search / drop down</h1>
+                    <div class="search-field" href="#">
+                        <input class="input input-search" type="search" placeholder="Search">
+                    </div>
+                    <div class="search-field" href="#">
+                        <input class="input input-search input-not-found" type="search" placeholder="I've not found what I'm looking for...">
+                    </div>
+                    <div class="search-field search-dropdown" href="#">
+                        <input class="input input-search input-dropdown" list="options" placeholder="Choose an option">
+                        <datalist id="options">
+                            <option value="one">
+                            <option value="two">
+                            <option value="three">
+                        </datalist>
                     </div>
                 </div>
             </div>
