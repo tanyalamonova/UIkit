@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Event registration</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    </head>
+    <body>
+        <div class="body-container">
+            <h1 class="block-header">event registration</h1>
+            <div class="form-container">
+                <form class="form">
+                    <input class="input input-text" type="text" name="name" id="name" placeholder="Your Name">
+                    <label class="input-message" for="name"></label>
+
+                    <input class="input input-text" type="email" name="email" id="email" placeholder="Your Email">
+                    <label class="input-message" for="email"></label>
+                    
+                    <input class="input input-text" type="tel" name="phone" id="phone" placeholder="Your Phone Number">
+                    <label class="input-message" for="phone"></label>
+
+                    <textarea class="textarea" name="add-info" placeholder="Additional Info"></textarea>
+                    
+                    <div class="tickbox-container">
+                        <input type="checkbox" class="checkbox-tickbox" id="tickbox"/>
+                        <label class="checkbox-label tickbox-label" for="tickbox">I'll be with a partner</label>
+                    </div>
+                    <div clas="toggle-container">
+                        <input type="checkbox" class="checkbox-toggle" id="toggle" />
+                        <label class="checkbox-label toggle-label" for="toggle">remind me 1 day before the event</label>
+                    </div>
+
+                    <a class="button button-large button-yes button-submit">register</a>
+                </form>
+            </div>
+            <h1 class="block-header">participants</h1>
+            <div class="flex-container">
+                <a class="arrow arrow-unavaliable arrow-left arrow-block"></a>
+                <div class="user-container">
+                    <img class="user-avatar" src="img/avatar.jpg"/>
+                    <div class="user-info">
+                        <span class="user user-name">sarah brown</span>
+                        <span class="user user-occupation">developer</span>
+                        <div class="user-social">
+                            <a class="social-icon icon-facebook" href="#"></a>
+                            <a class="social-icon icon-twitter" href="#"></a>
+                            <a class="social-icon icon-website" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-container">
+                    <img class="user-avatar" src="img/avatar2.jpg"/>
+                    <div class="user-info">
+                        <span class="user user-name">john smith</span>
+                        <span class="user user-occupation">UX designer</span>
+                        <div class="user-social">
+                            <a class="social-icon icon-facebook" href="#"></a>
+                            <a class="social-icon icon-twitter" href="#"></a>
+                            <a class="social-icon icon-website" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <a class="arrow arrow-active arrow-right arrow-block"></a>
+            </div>
+        </div>
+    </body>
