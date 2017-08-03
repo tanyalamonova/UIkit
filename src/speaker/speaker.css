@@ -1,0 +1,23 @@
+.speaker-header {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #747474;
+  margin-bottom: 0;
+}
+.speaker-name {
+  text-transform: none;
+  color: #888;
+}
+.paragraph {
+  text-transform: none;
+  color: #888;
+  display: block;
+  padding-left: 20px;
+  margin: 0;
+}
+.speaker-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}

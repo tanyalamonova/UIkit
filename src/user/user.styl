@@ -1,0 +1,66 @@
+yes-color = #4eb7a8
+light-gray-bg = #e5e5e5
+
+.user-container
+    width 300px
+    display flex
+    justify-content center
+    align-items center
+.user-avatar
+    display block
+    width 84px
+    height 84px
+    border 5px solid light-gray-bg
+    border-radius 50%
+.user-info
+    display block
+    box-sizing border-box
+    width 170px
+    height 93px
+    padding 10px
+    background url("img/Slider-bubble-bg-3.png") no-repeat
+    margin-left 20px
+    color dark-gray-text
+    &:hover
+        background url("img/Slider-bubble-bg-copy-4.png") no-repeat
+        color white
+        .icon-facebook
+            background url("img/FB-copy.png") center center no-repeat
+        .icon-twitter
+            background url("img/Twitter-copy.png") no-repeat center center
+        .icon-website
+            background url("img/Dribbble-copy.png") no-repeat center center
+        // .social-icon
+        //     background-color yes-color
+        .user-name
+            color white
+.user 
+    text-align center
+    display block
+.user-name
+    text-transform capitalize
+    font-size 18px
+    font-weight normal
+    color no-color
+.user-occupation
+    text-transform uppercase
+    font-size 11px
+    font-weight bold
+.user-social
+    display flex
+    justify-content center
+.social-icon
+    margin 10px
+    display block
+    width 25px
+    height 21px
+    background-repeat no-repeat
+.icon-facebook
+   background-image url("img/FB.png")
+   background-position center center
+.icon-twitter
+   background-image url("img/Twitter.png")
+   background-position center center
+.icon-website
+   background-image url("img/Dribbble.png")
+   background-position center center

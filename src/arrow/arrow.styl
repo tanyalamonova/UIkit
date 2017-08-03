@@ -1,0 +1,55 @@
+yes-color = #4eb7a8
+light-gray-bg = #e5e5e5
+
+.arrow
+    display inline-block
+    position relative
+    border-radius 50%
+    width 45px
+    height 45px
+    &:after
+        display block
+        position absolute
+        content ""
+        top 0
+        bottom 0
+        left 0
+        right 0
+        margin auto
+        width 10px
+        height 10px
+        transform rotate(45deg)
+.arrow-block
+    display block
+
+.arrow-active
+    transition all 0.2s 
+    background-color white
+    border 3px solid yes-color
+    &:after
+        border 5px solid yes-color
+    &:hover 
+        background yes-color
+.arrow-unavaliable
+    background-color light-gray-bg
+    border 3px solid light-gray-bg
+    &:after
+        border 5px solid white
+.arrow-left
+    &:after
+        margin-left 15px
+        border-right-color transparent
+        border-top-color transparent
+    &:hover:after
+        border-left-color white
+        border-bottom-color white
+        transition all 0.2s 
+.arrow-right
+    &:after
+        margin-right 15px
+        border-left-color transparent
+        border-bottom-color transparent
+    &:hover:after
+        border-right-color white
+        border-top-color white
+        transition all 0.2s 

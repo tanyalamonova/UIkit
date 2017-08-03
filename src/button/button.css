@@ -1,0 +1,50 @@
+.button {
+  margin: 0 20px;
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  color: #000;
+  background: #fff;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.button:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.button:hover,
+.button:active,
+.button:visited {
+  text-decoration: none;
+}
+.button-small {
+  width: 75px;
+  height: 20px;
+  line-height: 20px;
+  border-bottom-width: 2px;
+  font-size: 10px;
+}
+.button-large {
+  width: 115px;
+  height: 30px;
+  line-height: 30px;
+  border-bottom-width: 3px;
+  font-size: 12px;
+}
+.button-yes {
+  color: #4eb7a8;
+  border-color: #28a290;
+}
+.button-yes:hover {
+  background: #4eb7a8;
+}
+.button-no {
+  color: #e75735;
+  border-color: #cc4626;
+}
+.button-no:hover {
+  background: #e75735;
+}
