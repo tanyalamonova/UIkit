@@ -1,0 +1,14 @@
+mixin location(street, state)
+    .address-info
+        #map(class="map")
+        .map-address
+            .map-info
+                span(class="location-info location-message") Meet us!
+                +address(street, state)
+            .map-icons
+                a(class="map-icon my-location-icon" href="#")
+                a(class="map-icon marker-icon" href="#")
+    script(src="./map.js")
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAploWfSPNJ0K1HV9Xp5I653skKRcSO688&callback=googleMap")
+mixin address(street, state)
+    span(class="location-info location-address")= street

@@ -1,0 +1,16 @@
+body {
+  margin: 50px;
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: 1px;
+}
+.body-container {
+  width: 700px;
+  margin: auto;
+}
+.block-header {
+  color: #747474;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal;
+  font-size: 2em;
+}

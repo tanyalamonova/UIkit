@@ -1,0 +1,22 @@
+include ../src/head/head.pug
+include ../src/arrow/arrow.pug
+include ../src/location/location.pug
+include ../src/newsevents/news.pug
+-var classes = "arrow arrow-active arrow-right arrow-block"
+doctype html/
+style
+  include ../src/main/main.css
+  include ../src/arrow/arrow.css
+  include ../src/location/location.css
+  include ../src/newsevents/newsevents.css
+html
+  +head('index')
+  body
+      .body-container
+        +arrow(classes)
+        +location("1259 california st", "san francisco, ca")
+        h1.block-header news
+        div(class="flex-container news-container")
+          +news("It's all going downhill", "24 august 2013", "Lorem ipsum dolor sit amet")
+          +news("It's all going downhill", "24 august 2013", "Lorem ipsum dolor sit amet")
+  

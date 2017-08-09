@@ -1,21 +1,42 @@
 import _ from 'lodash';
-import './style.css';
-import Icon from '../img/cycling-news.jpg';
+//import './styles.css';
+import './arrow/arrow.styl';
+import './main/main.styl';
+import printMe from './print.js';
 
 function component() {
-  var element = document.createElement('div');
+    var element = document.createElement('div');
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
+    element.className = "body-container";
+    element.innerHTML = 'an arrow should be here';
 
-  // Add the image to our existing div.
-  var myIcon = new Image();
-  myIcon.src = Icon;
+    var arrow = document.createElement("div");
 
-  element.appendChild(myIcon);
+    arrow.classList.add("arrow", "arrow-active", "arrow-right", "arrow-block");
 
-  return element;
-}
+    element.appendChild(arrow);
 
-document.body.appendChild(component());
+
+    // var btn = document.createElement('button');
+
+    // element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+
+    // btn.innerHTML = 'Click me and check the console!';
+    // btn.onclick = printMe;
+
+    // element.appendChild(btn);
+
+    return element;
+  }
+
+// let element = component();
+// document.body.appendChild(element);
+
+// if (module.hot) {
+//   module.hot.accept('./print.js', function() {
+//     console.log('Accepting the updated printMe module!');
+//     document.body.removeChild(element);
+//     element = component();
+//     document.body.appendChild(element);
+//   })
+// }

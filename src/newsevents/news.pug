@@ -1,0 +1,8 @@
+mixin news(title, date, text)
+    .newsevents-item
+        .newsevents-image-container
+            img(class="newsevents-image" src="cycling-news.jpg")
+        div(class="newsevents-content news-content")
+            span(class="news-info news-title")= title
+            span(class="news-info news-date")= date
+            span(class="news-info news-text")= text
