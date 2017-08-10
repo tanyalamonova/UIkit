@@ -1,7 +1,7 @@
-mixin news(title, date, text)
+mixin news(title, date, text, imagePath)
     .newsevents-item
         .newsevents-image-container
-            img(class="newsevents-image" src="cycling-news.jpg")
+            img(class="newsevents-image" src=imagePath)
         div(class="newsevents-content news-content")
             span(class="news-info news-title")= title
             span(class="news-info news-date")= date

@@ -1,6 +1,4 @@
-<!DOCTYPE html/>
-<style>
-  body {
+<!DOCTYPE html/><style>body {
   margin: 50px;
   font-family: 'PT Sans', sans-serif;
   letter-spacing: 1px;
@@ -16,7 +14,7 @@
   font-weight: normal;
   font-size: 2em;
 }
-  .arrow {
+.arrow {
   display: inline-block;
   position: relative;
   border-radius: 50%;
@@ -77,62 +75,7 @@
   border-top-color: #fff;
   transition: all 0.2s;
 }
-  .address-info {
-  width: 700px;
-  height: 275px;
-  margin: 0 auto;
-}
-.map {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  width: 100%;
-  height: 200px;
-}
-.map-info,
-.map-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.map-address {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 75px;
-  box-sizing: border-box;
-  background-color: #e75735;
-  padding: 20px;
-}
-.location-info {
-  color: #fff;
-  margin-right: 20px;
-}
-.location-message {
-  font-size: 2em;
-  font-weight: normal;
-}
-.location-address {
-  font-size: 0.8em;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.map-icon {
-  display: block;
-  width: 27px;
-  height: 26px;
-  background-color: #fff;
-  margin: 0 10px;
-}
-.my-location-icon {
-  background: url("My-Location.png") no-repeat center center;
-}
-.marker-icon {
-  background: url("Pin.png") no-repeat center center;
-}
-  .news-container {
+.news-container {
   flex-wrap: wrap;
 }
 .newsevents-list {
@@ -230,37 +173,54 @@
   line-height: 25px;
   font-size: 10px;
 }
-
-</style>
-<html>
-  <head>
-    <title>index</title>
-    <!--link (href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet')/-->
-  </head>
-  <body>
-    <div class="body-container">
-      <h1 class="block-header">an arrow should be here</h1><a class="arrow arrow-active arrow-right arrow-block" href="../../dist/index.html"></a>
-      <div class="address-info">
-        <div class="map" id="map"></div>
-        <div class="map-address">
-          <div class="map-info"><span class="location-info location-message">Meet us!</span><span class="location-info location-address">1259 california st</span>
-          </div>
-          <div class="map-icons"><a class="map-icon my-location-icon" href="#"></a><a class="map-icon marker-icon" href="#"></a></div>
-        </div>
-      </div>
-      <script src="./map.js"></script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAploWfSPNJ0K1HV9Xp5I653skKRcSO688&amp;callback=googleMap"></script>
-      <h1 class="block-header">news</h1>
-      <div class="flex-container news-container">
-        <div class="newsevents-item">
-          <div class="newsevents-image-container"><img class="newsevents-image" src="cycling-news.jpg"/></div>
-          <div class="newsevents-content news-content"><span class="news-info news-title">It's all going downhill</span><span class="news-info news-date">24 august 2013</span><span class="news-info news-text">Lorem ipsum dolor sit amet</span></div>
-        </div>
-        <div class="newsevents-item">
-          <div class="newsevents-image-container"><img class="newsevents-image" src="cycling-news.jpg"/></div>
-          <div class="newsevents-content news-content"><span class="news-info news-title">It's all going downhill</span><span class="news-info news-date">24 august 2013</span><span class="news-info news-text">Lorem ipsum dolor sit amet</span></div>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+.button {
+  margin: 0 20px;
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  color: #000;
+  background: #fff;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.button:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.button:hover,
+.button:active,
+.button:visited {
+  text-decoration: none;
+}
+.button-small {
+  width: 75px;
+  height: 20px;
+  line-height: 20px;
+  border-bottom-width: 2px;
+  font-size: 10px;
+}
+.button-large {
+  width: 115px;
+  height: 30px;
+  line-height: 30px;
+  border-bottom-width: 3px;
+  font-size: 12px;
+}
+.button-yes {
+  color: #4eb7a8;
+  border-color: #28a290;
+}
+.button-yes:hover {
+  background: #4eb7a8;
+}
+.button-no {
+  color: #e75735;
+  border-color: #cc4626;
+}
+.button-no:hover {
+  background: #e75735;
+}
+</style><html><head><title>index</title><!--link (href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet')/--></head><body><div class="body-container"><h1 class="block-header">news</h1><div class="flex-container"><div class="newsevents-item"><div class="newsevents-image-container"><img class="newsevents-image" src="../src/newsevents/cycling-news.jpg"></div><div class="newsevents-content news-content"><span class="news-info news-title">It's all going downhill</span><span class="news-info news-date">24 august 2013</span><span class="news-info news-text">Lorem ipsum dolor sit amet</span></div></div><div class="newsevents-item"><div class="newsevents-image-container"><img class="newsevents-image" src="../src/newsevents/cycling-news.jpg"></div><div class="newsevents-content news-content"><span class="news-info news-title">It's all going downhill</span><span class="news-info news-date">24 august 2013</span><span class="news-info news-text">Lorem ipsum dolor sit amet</span></div></div><a class="arrow arrow-active arrow-right arrow-block" href="#"></a></div><h1 class="block-header">upcoming events</h1><div class="flex-container"><div class="newsevents-item"><div class="newsevents-image-container"><img class="newsevents-image" src="../../img/paris.jpg"></div><div class="newsevents-content event-content"><div class="news-info event-date"><span class="event-day">24</span><span class="event-month">aug</span></div><span class="news-info event-title">this is the title</span><span class="news-info event-text">Lorem ipsum dolor sit amet, consectetur adipiscing</span><a class="button button-large button-yes button-event" href="./event-registration.pug">add to calendar</a></div></div><div class="newsevents-item"><div class="newsevents-image-container"><img class="newsevents-image" src="../src/newsevents/cycling-news.jpg"></div><div class="newsevents-content event-content"><div class="news-info event-date"><span class="event-day">24</span><span class="event-month">aug</span></div><span class="news-info event-title">this is the title</span><span class="news-info event-text">Lorem ipsum dolor sit amet, consectetur adipiscing</span><a class="button button-large button-yes button-event" href="./event-registration.pug">add to calendar</a></div></div><a class="arrow arrow-active arrow-right arrow-block" href="#"></a></div><h1 class="block-header">past events</h1><div class="flex-container"><div class="newsevents-item"><div class="newsevents-image-container"><img class="newsevents-image" src="../../img/paris.jpg"></div><div class="newsevents-content event-content"><div class="news-info event-date"><span class="event-day">24</span><span class="event-month">aug</span></div><span class="news-info event-title">this is the title</span><span class="news-info event-text">Lorem ipsum dolor sit amet, consectetur adipiscing</span><a class="button button-large button-yes button-event" href="./event-registration.pug">learn more</a></div></div><div class="newsevents-item"><div class="newsevents-image-container"><img class="newsevents-image" src="../src/newsevents/cycling-news.jpg"></div><div class="newsevents-content event-content"><div class="news-info event-date"><span class="event-day">24</span><span class="event-month">aug</span></div><span class="news-info event-title">this is the title</span><span class="news-info event-text">Lorem ipsum dolor sit amet, consectetur adipiscing</span><a class="button button-large button-yes button-event" href="./event-registration.pug">learn more</a></div></div><a class="arrow arrow-active arrow-right arrow-block" href="#"></a></div></div><script type="text/javascript" src="app.bundle.js"></script></body></html>

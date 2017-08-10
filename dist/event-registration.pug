@@ -1,0 +1,13 @@
+include ../src/location/location.pug
+
+doctype html/
+style
+  include ../src/location/location.css
+html
+    +head('event registration')
+    body
+        .body-container
+            h1.block-header event registration
+            +location("1259 california st", "san francisco, ca")
+
+

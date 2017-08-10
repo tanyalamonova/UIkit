@@ -1,0 +1,13 @@
+include ../button/button.pug
+
+mixin event(day, month, title, text, imagePath, buttonText, buttonLink)
+    .newsevents-item
+        .newsevents-image-container
+            img(class="newsevents-image" src=require(imagePath))
+        div(class="newsevents-content event-content")
+            div(class="news-info event-date")
+                span.event-day= day
+                span.event-month= month
+            span(class="news-info event-title")= title
+            span(class="news-info event-text")= text
+            +button("button button-large button-yes button-event", buttonLink, buttonText)
