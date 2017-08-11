@@ -1,4 +1,6 @@
-<!DOCTYPE html/><style>body {
+<!DOCTYPE html/>
+<style>
+  body {
   margin: 50px;
   font-family: 'PT Sans', sans-serif;
   letter-spacing: 1px;
@@ -14,7 +16,7 @@
   font-weight: normal;
   font-size: 2em;
 }
-.arrow {
+  .arrow {
   display: inline-block;
   position: relative;
   border-radius: 50%;
@@ -75,7 +77,7 @@
   border-top-color: #fff;
   transition: all 0.2s;
 }
-.news-container {
+  .news-container {
   flex-wrap: wrap;
 }
 .newsevents-list {
@@ -173,7 +175,7 @@
   line-height: 25px;
   font-size: 10px;
 }
-.button {
+  .button {
   margin: 0 20px;
   display: inline-block;
   border-width: 1px;
@@ -223,4 +225,56 @@
 .button-no:hover {
   background: #e75735;
 }
-</style><html><head><title>index</title><!--link (href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet')/--></head><body><div class="body-container"><h1 class="block-header">news</h1><div class="flex-container"><div class="newsevents-item"><div class="newsevents-image-container"><img class="newsevents-image" src="../src/newsevents/cycling-news.jpg"></div><div class="newsevents-content news-content"><span class="news-info news-title">It's all going downhill</span><span class="news-info news-date">24 august 2013</span><span class="news-info news-text">Lorem ipsum dolor sit amet</span></div></div><div class="newsevents-item"><div class="newsevents-image-container"><img class="newsevents-image" src="../src/newsevents/cycling-news.jpg"></div><div class="newsevents-content news-content"><span class="news-info news-title">It's all going downhill</span><span class="news-info news-date">24 august 2013</span><span class="news-info news-text">Lorem ipsum dolor sit amet</span></div></div><a class="arrow arrow-active arrow-right arrow-block" href="#"></a></div><h1 class="block-header">upcoming events</h1><div class="flex-container"><div class="newsevents-item"><div class="newsevents-image-container"><img class="newsevents-image" src="../../img/paris.jpg"></div><div class="newsevents-content event-content"><div class="news-info event-date"><span class="event-day">24</span><span class="event-month">aug</span></div><span class="news-info event-title">this is the title</span><span class="news-info event-text">Lorem ipsum dolor sit amet, consectetur adipiscing</span><a class="button button-large button-yes button-event" href="./event-registration.pug">add to calendar</a></div></div><div class="newsevents-item"><div class="newsevents-image-container"><img class="newsevents-image" src="../src/newsevents/cycling-news.jpg"></div><div class="newsevents-content event-content"><div class="news-info event-date"><span class="event-day">24</span><span class="event-month">aug</span></div><span class="news-info event-title">this is the title</span><span class="news-info event-text">Lorem ipsum dolor sit amet, consectetur adipiscing</span><a class="button button-large button-yes button-event" href="./event-registration.pug">add to calendar</a></div></div><a class="arrow arrow-active arrow-right arrow-block" href="#"></a></div><h1 class="block-header">past events</h1><div class="flex-container"><div class="newsevents-item"><div class="newsevents-image-container"><img class="newsevents-image" src="../../img/paris.jpg"></div><div class="newsevents-content event-content"><div class="news-info event-date"><span class="event-day">24</span><span class="event-month">aug</span></div><span class="news-info event-title">this is the title</span><span class="news-info event-text">Lorem ipsum dolor sit amet, consectetur adipiscing</span><a class="button button-large button-yes button-event" href="./event-registration.pug">learn more</a></div></div><div class="newsevents-item"><div class="newsevents-image-container"><img class="newsevents-image" src="../src/newsevents/cycling-news.jpg"></div><div class="newsevents-content event-content"><div class="news-info event-date"><span class="event-day">24</span><span class="event-month">aug</span></div><span class="news-info event-title">this is the title</span><span class="news-info event-text">Lorem ipsum dolor sit amet, consectetur adipiscing</span><a class="button button-large button-yes button-event" href="./event-registration.pug">learn more</a></div></div><a class="arrow arrow-active arrow-right arrow-block" href="#"></a></div></div><script type="text/javascript" src="app.bundle.js"></script></body></html>
+
+</style>
+<html>
+  <head>
+    <title>index</title>
+    <!--link (href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet')/-->
+  </head>
+  <body>
+    <div class="body-container">
+      <h1 class="block-header">news</h1>
+      <div class="flex-container">
+        <div class="newsevents-item">
+          <div class="newsevents-image-container"><img class="newsevents-image" src="./cycling-news.jpg"/></div>
+          <div class="newsevents-content news-content"><span class="news-info news-title">It's all going downhill</span><span class="news-info news-date">24 august 2013</span><span class="news-info news-text">Lorem ipsum dolor sit amet</span></div>
+        </div>
+        <div class="newsevents-item">
+          <div class="newsevents-image-container"><img class="newsevents-image" src="./cycling-news.jpg"/></div>
+          <div class="newsevents-content news-content"><span class="news-info news-title">It's all going downhill</span><span class="news-info news-date">24 august 2013</span><span class="news-info news-text">Lorem ipsum dolor sit amet</span></div>
+        </div><a class="arrow arrow-active arrow-right arrow-block" href="#"></a>
+      </div>
+      <h1 class="block-header">upcoming events</h1>
+      <div class="flex-container">
+        <div class="newsevents-item">
+          <div class="newsevents-image-container"><img class="newsevents-image" src="../../img/paris.jpg"/></div>
+          <div class="newsevents-content event-content">
+            <div class="news-info event-date"><span class="event-day">24</span><span class="event-month">aug</span></div><span class="news-info event-title">this is the title</span><span class="news-info event-text">Lorem ipsum dolor sit amet, consectetur adipiscing</span><a class="button button-large button-yes button-event" href="#">add to calendar</a>
+          </div>
+        </div>
+        <div class="newsevents-item">
+          <div class="newsevents-image-container"><img class="newsevents-image" src="../src/newsevents/cycling-news.jpg"/></div>
+          <div class="newsevents-content event-content">
+            <div class="news-info event-date"><span class="event-day">24</span><span class="event-month">aug</span></div><span class="news-info event-title">this is the title</span><span class="news-info event-text">Lorem ipsum dolor sit amet, consectetur adipiscing</span><a class="button button-large button-yes button-event" href="#">add to calendar</a>
+          </div>
+        </div><a class="arrow arrow-active arrow-right arrow-block" href="#"></a>
+      </div>
+      <h1 class="block-header">past events</h1>
+      <div class="flex-container">
+        <div class="newsevents-item">
+          <div class="newsevents-image-container"><img class="newsevents-image" src="../../img/paris.jpg"/></div>
+          <div class="newsevents-content event-content">
+            <div class="news-info event-date"><span class="event-day">24</span><span class="event-month">aug</span></div><span class="news-info event-title">this is the title</span><span class="news-info event-text">Lorem ipsum dolor sit amet, consectetur adipiscing</span><a class="button button-large button-yes button-event" href="#">learn more</a>
+          </div>
+        </div>
+        <div class="newsevents-item">
+          <div class="newsevents-image-container"><img class="newsevents-image" src="../src/newsevents/cycling-news.jpg"/></div>
+          <div class="newsevents-content event-content">
+            <div class="news-info event-date"><span class="event-day">24</span><span class="event-month">aug</span></div><span class="news-info event-title">this is the title</span><span class="news-info event-text">Lorem ipsum dolor sit amet, consectetur adipiscing</span><a class="button button-large button-yes button-event" href="#">learn more</a>
+          </div>
+        </div><a class="arrow arrow-active arrow-right arrow-block" href="#"></a>
+      </div>
+    </div>
+  </body>
+</html>
